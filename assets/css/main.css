@@ -3756,7 +3756,8 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		background-color: #ffffff;
+		/* background-color: #ffffff; */
+		background-color:  rgba(255, 255, 255, 0.607);
 		position: relative;
 		margin: 0 auto;
 		width: calc(100% - 4rem);
@@ -3953,7 +3954,8 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #f5f5f5;
+		/* background-color: #f5f5f5; */
+		background-color:  rgba(255, 255, 255, 0.175);
 		color: #909498;
 		cursor: default;
 		position: relative;
