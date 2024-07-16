@@ -1,33 +1,56 @@
 <!DOCTYPE HTML>
 <!--
 	Massively by HTML5 UP
-	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	html5up.net | @ajlkn
 -->
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Wisdom In Data</title>
+	<title>Wisdom | Data Analyst</title>
 	<link rel="stylesheet" href="assets/css/main.css">
 	<noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
 	<style>
-		/* Progress Bar Container */
 		#progress-container {
 			width: 100%;
-			height: 8px;
-			/* background: #000000; */
+			height: 60px;
+			background: rgba(0, 0, 0, 0.743);
+			/* background: rgba(0,0,0,0.1); */
 			position: fixed;
 			top: 0;
 			left: 0;
 			z-index: 1000;
 		}
-	
-		/* Progress Bar */
 		#progress-bar {
 			height: 6px;
-			background: linear-gradient(to right,  rgba(0,0,0,0.1),rgba(0,0,0,0.1),  #6d6c71, #b6b5b7);
+			/* background: linear-gradient(to right,  rgba(0,0,0,0.1),rgba(0,0,0,0.1),  #6d6c71, #b6b5b7); */
+			background: linear-gradient(to right, #09122b, #172958, #172958, #1a3b8d, #244395, #305ba1);
 			width: 0%;
+		}
+		#gradient {
+            background: linear-gradient(to right, #bdd5fa, #99a9d5, #a9aaad, #66c289, #305ba1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+		}
+		
+		.moving-image {
+			color: #bdd5fa;
+			padding: 16px;
+		    position: absolute;
+		    height: 105px;
+		    left: 0;
+		    animation: moveImage 10s linear infinite;
+		}
+
+		@keyframes moveImage {
+		    0% {
+		        left: 0;
+		    }
+		    100% {
+		        left: 100%;
+		    }
 		}
 	</style>
 
@@ -35,15 +58,23 @@
 <body class="is-preload">
 	<div id="progress-container">
         <div id="progress-bar"></div>
+		<div id="name">
+			<header>
+				<h3><a href="#">Wisdom Ebohoin</a></h3>
+			</header>
+		 </div>
     </div>
 	<div class="progress-bar" style="will-change: transform; transform: translate3d(0px, 0px, 0px) scale3d(0.1363, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div>
+
 	<!-- Wrapper -->
 	<div id="wrapper" class="fade-in">
 
 		<!-- Intro -->
 		<div id="intro">
-			<h1>Wisdom Ebohoin<br>Portfolio</h1>
-			<p>Welcome to my portfolio showcasing my expertise in data analytics. Here you can explore projects and case studies demonstrating my skills in SQL, Tableau, and Python...</p>
+			<!-- <h1>Data Analyst.<br>Portfolio</h1> -->
+			<h1>Data Analyst.</h1>
+			<p>Hi 👋. I'm <span id="gradient">Wisdom</span>, welcome to my portfolio showcasing my expertise in data analytics. Here you can explore projects demonstrating my skills in SQL, Tableau, and Python...</p>
+			<h2>Curiosity. Creativity. Insights.</h2>
 			<ul class="actions">
 				<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 			</ul>
@@ -69,27 +100,35 @@
 		<div id="main">
 
 			<!-- Featured Post -->
-			<article class="post featured">
+			<!-- <article class="post featured">
 				<header class="major">
 					<p></p>
-					
 					<h2><a href="#">Visualising Data <br> with Tableau</a></h2>
-
 					<p>An in-depth look at creating interactive and insightful data visualisations with Tableau.</p>
 				</header>
 				<a href="https://public.tableau.com/app/profile/wisdom.ebo/viz/CovidDashboard_17200840528430/Dashboard1" target="_blank" class="image main"><img src="images/dashboardProj.png" alt="Data Analytics"></a>
 				<ul class="actions special">
 					<li><a href="https://public.tableau.com/app/profile/wisdom.ebo/viz/CovidDashboard_17200840528430/Dashboard1" target="_blank" class="button large">View Project</a></li>
 				</ul>
-			</article>
+			</article> -->
 
 			<!-- Posts -->
 			<section class="posts">
 				<article>
 					<header>
+						<h2><a href="#">Visualising Data <br> with Tableau</a></h2>
+					</header>
+					<a href="https://public.tableau.com/app/profile/wisdom.ebo/viz/CovidDashboard_17200840528430/Dashboard1" target="_blank" class="image main"><img src="images/dashboardProj.png" alt="Data Analytics"></a>
+					<p>Creating comprehensive dashboards to display key metrics and insights in a user-friendly manner.</p>
+					<ul class="actions special">
+						<li><a href="https://public.tableau.com/app/profile/wisdom.ebo/viz/CovidDashboard_17200840528430/Dashboard1" target="_blank" class="button large">View Project</a></li>
+					</ul>
+				</article>
+				<article>
+					<header>
 						<h2><a href="#">Data exploration and visualisation <br></a></h2>
 					</header>
-					<a href="https://public.tableau.com/app/profile/wisdom.ebo/viz/AirBnBListingsDashboard_17201710017850/Dashboard1" target="_blank" class="image fit"><img src="images/airbnb.jpg" alt="Data Cleaning"></a>
+					<a href="https://public.tableau.com/app/profile/wisdom.ebo/viz/AirBnBListingsDashboard_17201710017850/Dashboard1" target="_blank" class="image fit"><img src="images/laptop_airbnb.png" alt="Data Cleaning"></a>
 					<p>Exploring techniques for cleaning and transforming raw data to ensure accuracy and consistency in analysis and visualising findings.</p>
 					<ul class="actions special">
 						<li><a href="https://public.tableau.com/app/profile/wisdom.ebo/viz/AirBnBListingsDashboard_17201710017850/Dashboard1" class="button">View Project</a></li>
@@ -97,9 +136,9 @@
 				</article>
 				<article>
 					<header>
-						<h2><a href="https://github.com/WisEbo/PortfolioProjects/blob/main/MovieCorrelationProject.ipynb" target="_blank">Data Cleaning<br>and Transformation<br>with Python</a></h2>
+						<h2><a href="https://github.com/WisEbo/PortfolioProjects/blob/main/MovieCorrelationProject.ipynb" target="_blank">Data Cleaning<br> and Transformation<br>with Python</a></h2>
 					</header>
-					<a href="https://github.com/WisEbo/PortfolioProjects/blob/main/MovieCorrelationProject.ipynb" class="image fit" target="_blank"><img src="images/movies.jpg" alt="Python for Data Analysis"></a>
+					<a href="https://github.com/WisEbo/PortfolioProjects/blob/main/MovieCorrelationProject.ipynb" class="image fit" target="_blank"><img src="images/laptop_movie.png" alt="Python for Data Analysis"></a>
 					<p>Leveraging Python libraries like Pandas and NumPy to perform robust data analysis and manipulation.</p>
 					<ul class="actions special">
 						<li><a href="https://github.com/WisEbo/PortfolioProjects/blob/main/MovieCorrelationProject.ipynb" class="button" target="_blank">View Project</a></li>
@@ -109,23 +148,12 @@
 					<header>
 						<h2><a href="https://github.com/WisEbo/PortfolioProjects/blob/main/COVID%20Portfolio%20Project%20Script.sql" target="_blank">Data Explorating <br>with SQL</a></h2>
 					</header>
-					<a href="#" class="image fit"><img src="images/SQL.jpg" alt="Tableau Dashboards"></a>
+					<a href="#" class="image fit"><img src="images/laptop_sql.png" alt="Tableau Dashboards"></a>
 					<p>Crafting dynamic SQL queries to extract and analyze key metrics.</p>
 					<ul class="actions special">
 						<li><a href="https://github.com/WisEbo/PortfolioProjects/blob/main/COVID%20Portfolio%20Project%20Script.sql" target="_blank" class="button">View Project</a></li>
 					</ul>
 				</article>
-				<article>
-					<header>
-						<h2><a href="https://public.tableau.com/app/profile/wisdom.ebo/vizzes" target="_blank">Building Dashboards <br>with Tableau</a></h2>
-					</header>
-					<a href="#" class="image fit"><img src="images/tableau.jpg" alt="Tableau Dashboards"></a>
-					<p>Creating comprehensive dashboards to display key metrics and insights in a user-friendly manner.</p>
-					<ul class="actions special">
-						<li><a href="https://public.tableau.com/app/profile/wisdom.ebo/vizzes" target="_blank" class="button">View Project</a></li>
-					</ul>
-				</article>
-
 			</section>
 		</div>
 
@@ -134,11 +162,26 @@
 			<section>
 				<form method="post" action="#">
 					<ul class="actions">
-						<li><input type="submit" value="Work with Me"></li>
+						<li><input type="submit" value="Work with Me" class="button large"></li>
 					</ul>
 				</form>
 			</section>
+
+			
 		</footer>
+		<div>
+			<div>
+				<!-- <img src="images/laptop_covid.png" alt="Traveling Image 1" class="moving-image" style="animation-delay: 0s;">
+				<img src="images/laptop_airbnb.png" alt="Traveling Image 2" class="moving-image" style="animation-delay: 2s;">
+				<img src="images/laptop_movie.png" alt="Traveling Image 3" class="moving-image" style="animation-delay: 4s;"> -->
+				<!-- <h2 class="moving-image" style="animation-delay: 0s;">Curiosity.</h2>
+				<h2 class="moving-image" style="animation-delay: 2s;">Creativity.</h2>
+				<h2 class="moving-image" style="animation-delay: 4s;">Insights.</h2> -->
+
+			</div>
+
+		</div>
+
 
 		<!-- Copyright -->
 		<div id="copyright">

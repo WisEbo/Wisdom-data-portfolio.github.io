@@ -191,6 +191,7 @@ input, select, textarea {
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			border-bottom: 0;
+			/* color: #ffffff; */
 			color: inherit;
 			text-decoration: none;
 		}
@@ -306,7 +307,8 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #212931;
+		/* yoo */
+		/* color: #212931; */
 	}
 
 	blockquote {
@@ -3282,7 +3284,14 @@ input, select, textarea {
 		}
 
 /* Intro */
-
+	#name {
+		color: #ffffff;
+		position: relative;
+		margin: 0 auto;
+		width: calc(100% - 4rem);
+		z-index: 2;
+		padding: 0 4rem 4rem 4rem ;
+	}
 	#intro {
 		color: #ffffff;
 		padding: 8rem 4rem 6rem 4rem ;
@@ -3757,7 +3766,7 @@ input, select, textarea {
 
 	#main {
 		/* background-color: #ffffff; */
-		background-color:  rgba(255, 255, 255, 0.607);
+		background-color:  rgba(249, 250, 251, 0.286);
 		position: relative;
 		margin: 0 auto;
 		width: calc(100% - 4rem);
@@ -4011,7 +4020,8 @@ input, select, textarea {
 		#footer .button {
 			background-color: transparent;
 			box-shadow: inset 0 0 0 2px #717981;
-			color: #717981 !important;
+			/* color: #717981 !important; */
+			color: #ffffff !important;
 		}
 
 			#footer input[type="submit"]:hover,
