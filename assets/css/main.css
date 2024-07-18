@@ -3287,7 +3287,7 @@ input, select, textarea {
 /* Intro */
 	#name {
 		color: #ffffff;
-		position: relative;
+		position: absolute;
 		margin: 0 auto;
 		width: calc(100% - 4rem);
 		z-index: 2;
